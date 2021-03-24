@@ -12,6 +12,12 @@ $(call inherit-product, vendor/kangos/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Inherit some common KangOS stuff.
+
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+USE_GAPPS := true
+
 # Kangos official
 KANGOS_BUILDTYPE := OFFICIAL
 
