@@ -8,14 +8,20 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 #firmware is inherited in device makefile
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/kangos/config/common.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
-NAD_BUILD_TYPE := OFFICIAL
-USE_GAPPS ?= true
+
+# Kangos official
+KANGOS_BUILDTYPE := OFFICIAL
+
+# Kangos Maintainer
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.maintainer=Jullian_MS \
+  ro.kangos.cpu=SDM845
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_dipper
+PRODUCT_NAME := kangos_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8

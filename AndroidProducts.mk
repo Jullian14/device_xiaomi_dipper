@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_dipper.mk
+    $(LOCAL_DIR)/kangos_dipper.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_dipper-user \
-    nad_dipper-userdebug \
-    nad_dipper-eng
+    kangos_dipper-user \
+    kangos_dipper-userdebug \
+    kangos_dipper-eng
 
