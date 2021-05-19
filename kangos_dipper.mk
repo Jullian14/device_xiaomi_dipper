@@ -18,6 +18,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 USE_GAPPS := true
 
+# OP Launcher
+TARGET_OPLAUNCHER := true
+
 # Kangos official
 KANGOS_BUILDTYPE := OFFICIAL
 
